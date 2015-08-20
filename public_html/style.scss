@@ -15,6 +15,8 @@ body {
 	margin: 0 auto;
 	height: 100%;
 	background-color: #D8D8D8;
+	display: flex;
+	flex-direction: row;
 }
 
 img { max-width: 100% }
@@ -38,9 +40,13 @@ li {
 	border-right: 3px solid #C76256;
 	box-sizing: border-box;
 
+	flex-shrink: 0;
+
 	height: 100%;
 	margin:0;
 	background: #4E4E4E;
+
+	float: left;
 
 	> .nav-item {
 		box-sizing: border-box;
@@ -73,6 +79,28 @@ li {
 			background-color: #C76256;
 		}
 	}
+}
+
+#main {
+	height: 100%;
+	flex-grow: 100;	
+	& > div {
+		height: 100%;
+		width: 100%;
+		display: table;
+
+		& > div {
+			margin: auto;
+			display: table-cell;
+			vertical-align: middle;
+			padding-left: 10%;
+			padding-right: 10%;
+		}
+	}
+}
+
+.content {
+	margin: auto;
 }
 
 @media all and (min-width: 600px) {
