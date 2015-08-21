@@ -47,6 +47,9 @@ li {
 
 #nav {
 	display: none;
+	&.active {
+		display: block;
+	}
 
 	width: 28%;
 	max-width: 360px;
@@ -89,9 +92,15 @@ li {
 				font-weight: bold;
 				font-style: normal;
 			}
+			pointer-events: none;
+		}
+		&:hover {
+			background-color: #939393;
+			cursor: pointer;
 		}
 		&.selected {
 			background-color: #C76256;
+			pointer-events: none;
 		}
 	}
 }
