@@ -31,6 +31,15 @@ li {
 	list-style: none;
 	display: inline-block;
 }
+svg {
+	width: 7em;
+	height: 7em;
+	fill: #4E4E4E;
+	cursor: pointer;
+	&:hover {
+		fill: #C76256;
+	}
+}
 
 #topbar {
 	width: 100%;
