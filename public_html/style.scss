@@ -15,8 +15,8 @@ body {
 	margin: 0 auto;
 	height: 100%;
 	background-color: #D8D8D8;
-	display: flex;
-	flex-direction: row;
+	display: -webkit-box;
+	overflow: hidden;
 }
 
 img { max-width: 100% }
@@ -37,11 +37,13 @@ li {
 	height: 2.5em;
 	line-height: 2.5em;
 	background-color: #4E4E4E;
-	position: absolute;
+	position: fixed;
+	z-index: 9999;
 	.menu {
 		font-size: 1.25em;
 		padding-left: 0.5em;
 		color: #D8D8D8;
+		cursor: pointer;
 	}
 }
 
@@ -52,19 +54,16 @@ li {
 	}
 
 	width: 28%;
-	max-width: 360px;
+	max-width: 280px;
 	min-width: 170px;
 
 	border-right: 3px solid #C76256;
 	box-sizing: border-box;
 
-	flex-shrink: 0;
-
 	height: 100%;
 	margin:0;
 	background: #4E4E4E;
 
-	float: left;
 
 	> .nav-item {
 		box-sizing: border-box;
@@ -107,7 +106,10 @@ li {
 
 #main {
 	height: 100%;
-	flex-grow: 100;
+	width: 100%;
+
+	overflow: scroll;
+
 	& > div {
 		height: 100%;
 		width: 100%;
@@ -119,20 +121,55 @@ li {
 .content {
 	display: table-cell;
 	vertical-align: middle;
-	padding-left: 10%;
-	padding-right: 10%;
+	padding: 5% 10%;
 
+	font-family: 'Fjord One', serif;
 	text-align: justify;
 	color: #4E4E4E;
+
+	.underline {
+		width: 100%;
+		background-color: #C76256;
+		height: 0.25em;
+		margin-top: 0.25em;
+		margin-bottom: 1.5em;
+	}
+
+	.section-header {
+		font-size: 1.75em;
+	}
+
+	a {
+		display: block;
+		text-align: right;
+		margin-top: 0.25em;
+	}
+
+	.projects {
+		margin: 0;
+		.project {
+			margin-bottom: 1.25em;
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
 }
 
+// Desktop styles
 @media all and (min-width: 600px) {
+	body {
+		display: flex;
+		flex-direction: row;
+	}
+
 	#topbar {
 		display: none;
 	}
 
 	#nav {
 		display: block;
+		flex-shrink: 0;
 		> .nav-item {
 
 			&.title {
@@ -143,5 +180,9 @@ li {
 				}
 			}
 		}
+	}
+
+	#main {
+		flex-grow: 100;
 	}
 }

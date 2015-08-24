@@ -1,17 +1,37 @@
+var React = require('react');
+
+import About from "./script/about";
+import Projects from "./script/projects";
+import Contact from "./script/contact";
+
 var SectionRouter = Backbone.Router.extend({
 	routes: {
-		"help": "help"
+		"/about": "about"
 	},
 
-	initialize: function() {
-		debugger;
+	about: function() {
+		this.setPageContent(About);
 	},
 
-	help: function() {
-		debugger;
+	projects: function() {
+		this.setPageContent(Projects);
+	},
+
+	resume: function() {
+
+	},
+
+	contact: function() {
+		this.setPageContent(Contact);
+	},
+
+	setPageContent: function(Component) {
+		var container = _.first($('.content'));
+		React.unmountComponentAtNode(container);
+		React.render(<Component />, container);
 	}
 });
 
-var sectionRouter = new SectionRouter();
+var router = new SectionRouter();
 
-export default sectionRouter;
+export default router;
