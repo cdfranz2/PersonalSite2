@@ -32,8 +32,6 @@ li {
 	display: inline-block;
 }
 svg {
-	width: 7em;
-	height: 7em;
 	fill: #4E4E4E;
 	cursor: pointer;
 	&:hover {
@@ -146,6 +144,7 @@ svg {
 
 	.section-header {
 		font-size: 1.75em;
+		text-align: left;
 	}
 
 	.projects {
@@ -161,6 +160,19 @@ svg {
 				text-align: right;
 				margin-top: 0.25em;
 			}
+
+			svg {
+				width: 2em;
+				height: 2em;
+				margin-left: 0.75em;
+			}
+		}
+	}
+
+	.contact {
+		svg {
+			width: 7em;
+			height: 7em;
 		}
 	}
 }
