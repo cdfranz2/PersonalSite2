@@ -148,18 +148,18 @@ svg {
 		font-size: 1.75em;
 	}
 
-	a {
-		display: block;
-		text-align: right;
-		margin-top: 0.25em;
-	}
-
 	.projects {
 		margin: 0;
 		.project {
 			margin-bottom: 1.25em;
 			&:last-child {
 				margin-bottom: 0;
+			}
+
+			a {
+				display: block;
+				text-align: right;
+				margin-top: 0.25em;
 			}
 		}
 	}
