@@ -15,10 +15,6 @@ $(document).ready(() => {
 		router.projects();
 	});
 
-	$('.resume').click(() => {
-		router.resume();
-	});
-
 	$('.contact').click(() => {
 		router.contact();
 	});
@@ -27,4 +23,6 @@ $(document).ready(() => {
 		$('.nav-item').removeClass('selected');
 		$(ev.target).closest('.nav-item').addClass('selected');
 	});
+
+	router.about();
 });

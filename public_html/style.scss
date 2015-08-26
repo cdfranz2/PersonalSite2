@@ -72,7 +72,7 @@ svg {
 	background: #4E4E4E;
 
 
-	> .nav-item {
+	.nav-item {
 		box-sizing: border-box;
 
 		width: 100%;
@@ -155,12 +155,6 @@ svg {
 				margin-bottom: 0;
 			}
 
-			a {
-				display: block;
-				text-align: right;
-				margin-top: 0.25em;
-			}
-
 			svg {
 				width: 2em;
 				height: 2em;
@@ -191,7 +185,7 @@ svg {
 	#nav {
 		display: block;
 		flex-shrink: 0;
-		> .nav-item {
+		.nav-item {
 
 			&.title {
 				margin-left: 0;
