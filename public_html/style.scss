@@ -128,7 +128,8 @@ svg {
 .content {
 	display: table-cell;
 	vertical-align: middle;
-	padding: 5% 10%;
+	padding: 4.5em 3em 2em 3em;
+
 
 	font-family: 'Fjord One', serif;
 	text-align: justify;
@@ -199,5 +200,9 @@ svg {
 
 	#main {
 		flex-grow: 100;
+
+		.content {
+			padding: 2em 3em;
+		}
 	}
 }
