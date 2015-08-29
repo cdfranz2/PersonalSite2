@@ -1,40 +1,50 @@
 var React = require('react');
 
 var projectData = [
+	// {
+	// 	name: "Sprout Social: Message Approval",
+	// 	description: "I took point on the front-end development of Sprout's message approval system. This involved building several new React components, creating robust new Backbone views, integrating these components with an API and existing front-end structures, and refactoring legacy code throughout the app."
+	// },
+	{
+		name: "Sprout Social: Facebook Mentions",
+		description: "I worked in a team of two to add Facebook page mentions to Sprout's message widget. This involved adding a Backbone view to an existing jQuery UI component, as well as handling several asynchronous API requests to look up Facebook page results and store frequently mentioned pages.",
+		link: 'http://sproutsocial.com/insights/tag-facebook-pages-from-sprout/'
+	},
 	{
 		name: "Bloodborne Skill Calculator",
 		description: "This is a web app to help others plan their characters in the role-playing game Bloodborne. Users can enter their current and planned attributes through Backbone views, which flows into a Backbone model that calculates resulting character statistics and bubbles them back up to the view.",
-		link: 'bloodbornecalculator/bloodborne.html'
+		link: 'bloodbornecalculator/bloodborne.html',
+		github: 'https://github.com/cdfranz2/BloodborneCalculator'
 	},
 	{
 		name: "Super Puzzle Ninja",
 		description: "This is a Flash game that I made with the help of the Flixel library in May 2014. It's an action-puzzle game that implements a complex gameplay loop, sprite-based graphics, particle effects, saved high scores, and more while also accounting for performance.",
-		link: 'http://web.engr.illinois.edu/~cdfranz2/superpuzzleninja/SuperPuzzleNinja.html',
+		link: 'superpuzzleninja/SuperPuzzleNinja.html',
 		github: 'https://github.com/cdfranz2/SuperPuzzleNinja'
 	},
 	{
 		name: "ASoIaF Character Generator",
 		description: "This is a simple web tool that creates characters fit to live in the world of Westeros. Users can select gender, region, and house options, and then generate characters based on their specifications. I used JavaScript to handle character generation and jQuery to implement the UI, which involves a collapsible, dynamic bottom drawer.",
 		link: 'asoiafgenerator/main.html',
-		github: null
+		github: 'https://github.com/cdfranz2/ASOIAFGenerator'
 	},
 	{
 		name: "Can One Fake Randomness?",
 		description: "This is a poster project, entered into the 2014 UIUC Undergraduate Research Symposium, that I worked on with my classmates Rishbabh Marya and Robert Weber, along with Professor A.J. Hildebrand. The project involved developing statistical tests in Java and JavaScript, along with heavy use of the JExcel API for analyzing our experimental data. The poster won an Outstanding Presentation Award from Akuna Capital LLC.",
 		link: 'assets/ursposter.pdf',
-		github: null
+		github: 'https://github.com/cdfranz2/FakeRandomness'
 	},
 	{
 		name: "EmEssPaint",
 		description: "This is a non-copyright-infringing drawing program that I made in my high school Computer Science class. It was written in Java and makes use of the AWT API.",
 		link: null,
-		github: null
+		github: 'https://github.com/cdfranz2/EmEssPaint'
 	},
 	{
 		name: "R. Kelly Saves the World",
 		description: "This is a top-down, Robotron-style shooter starring everyone's favorite R&B artist that I wrote in Java during the summer of 2013. I extensively utilized Java's object-oriented capabilities to sensibly develop a wide variety of game entities, including several types of enemies and powerups.",
 		link: null,
-		github: null
+		github: 'https://github.com/cdfranz2/RKSTW'
 	}
 ];
 
