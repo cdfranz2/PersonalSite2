@@ -1,5 +1,3 @@
-var React = require('react');
-
 import router from "./router";
 
 $(document).ready(() => {
@@ -8,21 +6,23 @@ $(document).ready(() => {
 	});
 
 	$('.about').click(() => {
-		router.about();
+		router.navigate('about', {trigger: true});
 	});
 
 	$('.projects').click(() => {
-		router.projects();
+		router.navigate('projects', {trigger: true});
+	});
+
+	$('.resume').click(() => {
+		router.navigate('resume', {trigger: true});
 	});
 
 	$('.contact').click(() => {
-		router.contact();
+		router.navigate('contact', {trigger: true});
 	});
 
 	$('.nav-item').click((ev) => {
 		$('.nav-item').removeClass('selected');
 		$(ev.target).closest('.nav-item').addClass('selected');
 	});
-
-	router.about();
 });

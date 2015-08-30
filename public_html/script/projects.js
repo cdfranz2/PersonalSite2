@@ -1,10 +1,4 @@
-var React = require('react');
-
 var projectData = [
-	// {
-	// 	name: "Sprout Social: Message Approval",
-	// 	description: "I took point on the front-end development of Sprout's message approval system. This involved building several new React components, creating robust new Backbone views, integrating these components with an API and existing front-end structures, and refactoring legacy code throughout the app."
-	// },
 	{
 		name: "Sprout Social: Facebook Mentions",
 		description: "I worked in a team of two to add Facebook page mentions to Sprout's message widget. This involved adding a Backbone view to an existing jQuery UI component, as well as handling several asynchronous API requests to look up Facebook page results and store frequently mentioned pages.",
